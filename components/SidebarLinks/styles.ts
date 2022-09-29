@@ -20,7 +20,9 @@ export const SidebarHeader = styled('div', {
   paddingTop: '13px',
   paddingBottom: '12px',
   alignItems: 'center',
+  minHeight: '47px',
   height: '47px',
+  maxHeight: '47px',
   fontSize: '18px',
   fontWeight: '800',
 });
@@ -109,6 +111,7 @@ export const Separator = styled('div', {
 });
 
 export const Links = styled('div', {
+  transition: 'all 0.3s ease',
   display: 'flex',
   flexDirection: 'column',
   gap: '7px',
