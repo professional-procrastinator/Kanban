@@ -111,7 +111,7 @@ export const Separator = styled('div', {
 export const Links = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  gap: '10px',
+  gap: '7px',
 });
 
 export const LinkHeader = styled('div', {
@@ -119,6 +119,7 @@ export const LinkHeader = styled('div', {
   flexDirection: 'row',
   justifyContent: 'space-between',
   padding: '14px 18px',
+  marginBottom: '-10px',
 
   '*': {
     margin: 'auto 0',
@@ -140,6 +141,68 @@ export const LinkHeaderDetails = styled('div', {
   },
 });
 
+export const LinkInactiveHeaderDetails = styled('div', {
+  display: 'flex',
+  gap: '10px',
+
+  '*': {
+    margin: 'auto',
+  },
+
+  ':nth-child(2)': {
+    color: '#6C6F75',
+    fontWeight: '600',
+    fontSize: '18px',
+  },
+});
+
 export const LinkHeaderIcon = styled('div', {
   margin: '5px 0px 0px 0',
+});
+
+export const LinkBody = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  margin: '0 0 auto auto',
+  padding: '0px 18px',
+  width: '81%',
+  gap: '2px',
+});
+
+export const LinkBodyItem = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  backgroundColor: '#F3F3F3',
+  padding: '10px 14px',
+  borderRadius: '7px',
+  gap: '8px',
+
+  '*': {
+    margin: 'auto 0',
+  },
+
+  ':nth-child(2)': {
+    color: '#515151',
+    fontWeight: '400',
+    fontSize: '16px',
+  },
+});
+
+export const LinkInactiveBodyItem = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  backgroundColor: 'transparent',
+  padding: '10px 14px',
+  borderRadius: '7px',
+  gap: '8px',
+
+  '*': {
+    margin: 'auto 0',
+  },
+
+  ':nth-child(2)': {
+    color: '#919397',
+    fontWeight: '400',
+    fontSize: '16px',
+  },
 });
