@@ -20,6 +20,8 @@ export const {
       separator: '#E9EBEF',
       iconBackground: '#F5F5F5',
       activeIconBorder: '#533BE5',
+      neutralBlack100: '#191925',
+      neutralBlack70: '#7F8995',
     },
   },
 });
