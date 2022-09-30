@@ -17,6 +17,7 @@ export const SidebarStyles = styled('div', {
 export const DimensionIcon = styled('div', {
   display: 'flex',
   margin: '20px auto 0 auto',
+  cursor: 'pointer',
 });
 
 export const Separator = styled('div', {
@@ -37,6 +38,13 @@ export const AppIcon = styled('div', {
   paddingLeft: '10px',
   paddingBottom: '6px',
   backgroundColor: '$iconBackground',
+
+  cursor: 'pointer',
+  transition: 'all 0.2s ease',
+
+  '&:hover': {
+    scale: '1.08',
+  },
 });
 
 export const AddIcon = styled('div', {
@@ -50,6 +58,12 @@ export const AddIcon = styled('div', {
   display: 'flex',
   justifyContent: 'center',
   backgroundColor: '$iconBackground',
+  cursor: 'pointer',
+  transition: 'all 0.2s ease',
+
+  '&:hover': {
+    scale: '1.08',
+  },
 });
 
 export const Active = styled('div', {
@@ -76,4 +90,10 @@ export const ActiveAppIcon = styled('div', {
   backgroundColor: '$iconBackground',
   border: '2px solid $activeIconBorder',
   scale: '0.95',
+  cursor: 'pointer',
+  transition: 'all 0.2s ease',
+
+  '&:hover': {
+    scale: '0.97',
+  },
 });

@@ -5,8 +5,8 @@ export const Container = styled('div', {
   flexDirection: 'row',
   justifyContent: 'space-between',
   padding: '0px 24px 3px 24px',
-  minHeight: '63px',
-  maxHeight: '63px',
+  minHeight: '55px',
+  maxHeight: '55px',
   borderBottom: '1px solid $separator',
 
   '*': {
@@ -18,22 +18,29 @@ export const LeftContainer = styled('div', {
   display: 'flex',
   flexDirection: 'row',
   gap: '10px',
+
+  '*': {
+    margin: 'auto 0',
+  },
 });
 
 export const RightContainer = styled('div', {
   display: 'flex',
   flexDirection: 'row',
   gap: '10px',
+
+  '*': {
+    margin: 'auto 0',
+  },
 });
 
 export const Avatars = styled('div', {
   display: 'flex',
   flexDirection: 'row',
   gap: '5px',
-  margin: 'auto 0',
 
   '*': {
-    margin: 'auto',
+    margin: '2px 0px !important',
   },
 });
 
@@ -49,12 +56,11 @@ export const ModeContainer = styled('div', {
 });
 
 export const SwitchButton = styled('div', {
-  margin: '0px 0',
   transition: 'all 0.3s ease',
   fontFamily: '$GTWalshiem',
   backgroundColor: '#ffffff',
   borderRadius: '10px',
-  padding: '10.5px 3px',
+  padding: '10.5px 2px',
   boxShadow: '0px 5px 0px #DFE1E4',
   border: '1.5px solid #DFE1E4',
   maxHeight: '10px',
@@ -94,7 +100,7 @@ export const SwitchButton = styled('div', {
 });
 
 export const ButtonSeparator = styled('div', {
-  width: '1.6px',
+  width: '1px',
   top: '10px',
   bottom: '8px',
   backgroundColor: '$separator',

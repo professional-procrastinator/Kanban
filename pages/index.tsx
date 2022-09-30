@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Header from '../components/Header';
+import Kanban from '../components/Kanban';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import SidebarLinks from '../components/SidebarLinks';
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <FlexColumn>
         <Header />
         <Statusbar />
+        <Kanban />
       </FlexColumn>
     </Layout>
   );

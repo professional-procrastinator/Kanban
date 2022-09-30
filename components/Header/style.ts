@@ -90,4 +90,10 @@ export const LayoutIcon = styled('div', {
   borderRadius: '11px',
   backgroundColor: '#ffffff',
   border: '1px solid #DFE1E4',
+  cursor: 'pointer',
+  transition: 'all 0.1s ease',
+
+  '&:hover': {
+    scale: '1.08',
+  },
 });
