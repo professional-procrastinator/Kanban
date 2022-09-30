@@ -3,13 +3,26 @@ import Header from '../components/Header';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import SidebarLinks from '../components/SidebarLinks';
+import Statusbar from '../components/StatusBar';
+import { styled } from '../stitches.config';
+
+const FlexColumn = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  width: '100vw',
+  padding: '0px',
+  margin: '0px',
+});
 
 const Home: NextPage = () => {
   return (
     <Layout>
       <Sidebar />
       <SidebarLinks />
-      <Header />
+      <FlexColumn>
+        <Header />
+        <Statusbar />
+      </FlexColumn>
     </Layout>
   );
 };

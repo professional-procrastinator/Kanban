@@ -7,7 +7,6 @@ export const Container = styled('div', {
   justifyContent: 'space-between',
   minHeight: '34px',
   maxHeight: '34px',
-  width: '100%',
   borderBottom: '1px solid $separator',
 
   '*': {
