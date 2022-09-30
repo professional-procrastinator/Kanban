@@ -29,11 +29,77 @@ export const RightContainer = styled('div', {
 export const Avatars = styled('div', {
   display: 'flex',
   flexDirection: 'row',
-  gap: '10px',
+  gap: '5px',
+  margin: 'auto 0',
 
   '*': {
     margin: 'auto',
   },
+});
+
+export const ActiveModeContainer = styled('div', {
+  backgroundColor: '#DFE1E4',
+  padding: '3px 9px',
+  borderRadius: '8px',
+});
+
+export const ModeContainer = styled('div', {
+  backgroundColor: 'transparent',
+  padding: '3px 9px',
+});
+
+export const SwitchButton = styled('div', {
+  margin: '0px 0',
+  transition: 'all 0.3s ease',
+  fontFamily: '$GTWalshiem',
+  backgroundColor: '#ffffff',
+  borderRadius: '10px',
+  padding: '10.5px 3px',
+  boxShadow: '0px 5px 0px #DFE1E4',
+  border: '1.5px solid #DFE1E4',
+  maxHeight: '10px',
+  minHeight: '10px',
+  minWidth: '80px',
+  maxWidth: '80px',
+  userSelect: 'none',
+  cursor: 'pointer',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  fontWeight: '600',
+  fontSize: '16.5px',
+  gap: '7px',
+  position: 'relative',
+
+  '&:hover': {},
+  '&:active': {
+    boxShadow: 'none',
+    translate: '0px 8px',
+  },
+  '&:focus': {
+    outline: 'none',
+  },
+
+  '*': {
+    margin: 'auto',
+  },
+
+  ':nth-child(1)': {
+    marginTop: '-7px',
+  },
+
+  ':nth-child(3)': {
+    marginTop: '-7px',
+  },
+});
+
+export const ButtonSeparator = styled('div', {
+  width: '1.6px',
+  top: '10px',
+  bottom: '8px',
+  backgroundColor: '$separator',
+  position: 'absolute',
+  margin: 'auto 12px',
 });
 
 export const Button = styled('div', {
@@ -75,6 +141,48 @@ export const Button = styled('div', {
 
   ':nth-child(2)': {
     marginTop: '-7px',
+  },
+});
+
+export const ShareButton = styled('div', {
+  transition: 'all 0.3s ease',
+  fontFamily: '$GTWalshiem',
+  backgroundColor: '#ffffff',
+  borderRadius: '10px',
+  padding: '11px 9px',
+  boxShadow: '0px 5px 0px #DFE1E4',
+  border: '1.5px solid #DFE1E4',
+  maxHeight: '10px',
+  minHeight: '10px',
+  userSelect: 'none',
+  cursor: 'pointer',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  fontWeight: '600',
+  fontSize: '16.5px',
+  color: '#6C6F75',
+  gap: '7px',
+
+  '&:hover': {},
+  '&:active': {
+    boxShadow: 'none',
+    translate: '0px 8px',
+  },
+  '&:focus': {
+    outline: 'none',
+  },
+
+  '*': {
+    margin: 'auto',
+  },
+
+  ':nth-child(1)': {
+    marginTop: '-5px',
+  },
+
+  ':nth-child(2)': {
+    marginTop: '-4px',
   },
 });
 

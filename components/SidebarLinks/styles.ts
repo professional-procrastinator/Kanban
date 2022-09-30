@@ -115,6 +115,9 @@ export const Links = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   gap: '7px',
+  overflowY: 'auto',
+  overflowX: 'hidden',
+  maxHeight: '570px',
 });
 
 export const LinkHeader = styled('div', {
@@ -123,6 +126,18 @@ export const LinkHeader = styled('div', {
   justifyContent: 'space-between',
   padding: '14px 18px',
   marginBottom: '-10px',
+
+  '*': {
+    margin: 'auto 0',
+  },
+});
+
+export const LinkLastHeader = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  padding: '14px 18px',
+  marginBottom: '0px',
 
   '*': {
     margin: 'auto 0',

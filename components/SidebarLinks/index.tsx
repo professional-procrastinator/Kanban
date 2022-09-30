@@ -17,6 +17,7 @@ import {
   LinkBodyItem,
   LinkInactiveBodyItem,
   LinkInactiveHeaderDetails,
+  LinkLastHeader,
 } from './styles';
 import Image from 'next/image';
 
@@ -134,7 +135,7 @@ export default function SidebarLinks() {
           </LinkHeaderIcon>
         </LinkHeader>
 
-        <LinkHeader>
+        <LinkLastHeader>
           <LinkInactiveHeaderDetails>
             <Image src={Analytics} />
             <span>Analytics</span>
@@ -143,7 +144,7 @@ export default function SidebarLinks() {
           <LinkHeaderIcon>
             <Image src={Arrow_right} />
           </LinkHeaderIcon>
-        </LinkHeader>
+        </LinkLastHeader>
       </Links>
     </Container>
   );
