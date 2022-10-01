@@ -3,11 +3,10 @@ import { styled } from '../../stitches.config';
 export const Container = styled('div', {
   display: 'flex',
   gap: '35px',
-  padding: '40px 24px 3px 24px',
+  padding: '40px 24px 12px 24px',
   overflowX: 'auto',
   overflowY: 'hidden',
-  minWidth: '100%',
-  maxWidth: '1040px',
+  height: '81%',
 });
 
 export const Column = styled('div', {

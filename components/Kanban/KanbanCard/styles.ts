@@ -58,39 +58,83 @@ export const ResearchChip = styled('div', {
   margin: 'auto 0',
   padding: '6px 9px',
   borderRadius: '5px',
-  backgroundColor: 'rgba(132,120,254,0.15)',
-  color: '#8478FE',
   fontWeight: '800',
   fontSize: '15px',
+
+  color: '#8478FE',
+  backgroundColor: 'rgba(132,120,254,0.15)',
 });
 
 export const UIChip = styled('div', {
   alignItems: 'center',
   margin: 'auto 0',
-  padding: '4px',
+  padding: '6px 9px',
+  borderRadius: '5px',
+  fontWeight: '800',
+  fontSize: '15px',
+  color: '#2F6BFE',
+  backgroundColor: 'rgba(47,107,254,0.15)',
 });
 
 export const PlanningChip = styled('div', {
   alignItems: 'center',
   margin: 'auto 0',
-  padding: '4px',
+  padding: '6px 9px',
+  borderRadius: '5px',
+  fontWeight: '800',
+  fontSize: '15px',
+  color: '#78C552',
+  backgroundColor: 'rgba(120,197,82,0.15)',
 });
 
 export const Avatars = styled('div', {
   margin: 'auto 0',
   display: 'flex',
   flexDirection: 'row',
+});
+
+export const Avatar = styled('div', {
+  marginLeft: '-13px',
+});
+
+export const Separator = styled('div', {
+  margin: '12px -14px 0px -14px',
+  height: '1px',
+  backgroundColor: '#EAEDF0',
+});
+
+export const ActionsContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  marginTop: '15px',
+});
+
+export const ActionsLeft = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  gap: '12px',
 
   '*': {
     margin: 'auto 0',
-    position: 'relative',
+  },
+});
 
-    '*': {
-      overflow: 'auto',
-    },
+export const ActionsRight = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+});
+
+export const Action = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  gap: '5px',
+
+  ':nth-child(2)': {
+    color: '#98A5B3',
   },
 
-  ':nth-child(1)': {
-    margin: '0 -10px 0 0',
+  '*': {
+    margin: 'auto 0',
   },
 });

@@ -5,6 +5,7 @@ body {
   height: 100vh;
   font-family: GTWalshiem;
   overflow: hidden;
+  scrollbar-width: '5px';
 }
 
 @font-face {
