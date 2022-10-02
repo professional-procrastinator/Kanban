@@ -60,7 +60,7 @@ export const SwitchButton = styled('div', {
   fontFamily: '$GTWalshiem',
   backgroundColor: '#ffffff',
   borderRadius: '10px',
-  padding: '10.5px 2px',
+  padding: '10.5px 1.5px',
   boxShadow: '0px 5px 0px #DFE1E4',
   border: '1.5px solid #DFE1E4',
   maxHeight: '10px',

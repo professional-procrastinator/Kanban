@@ -69,7 +69,7 @@ export const ColumnHeaderRight = styled('div', {
 export const ColumnBody = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  gap: '20px',
+  gap: '30px',
 });
 
 export const ToDoSeparator = styled('div', {
@@ -91,4 +91,33 @@ export const CompletedSeparator = styled('div', {
   height: '2px',
   backgroundColor: '#78C552',
   borderRadius: '16px',
+});
+
+export const AddCardButton = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: '16px',
+  padding: '12px 0',
+  cursor: 'pointer',
+  transition: 'all 0.1s ease',
+  width: '100%',
+  border: '1px solid #EAEDF0',
+  borderRadius: '8px',
+
+  '&:hover': {
+    scale: '1.02',
+    backgroundColor: '#F7F9FA',
+  },
+
+  '*': {
+    margin: 'auto 0',
+  },
+
+  ':nth-child(2)': {
+    marginTop: '2px',
+    color: '#4734FE',
+    fontWeight: 'bold',
+  },
 });

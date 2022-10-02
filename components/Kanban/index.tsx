@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import KanbanCard from './KanbanCard';
 import {
+  AddCardButton,
   Column,
   ColumnBody,
   ColumnHeader,
@@ -27,6 +28,7 @@ import Progress from '../../public/icons/progress.svg';
 import Completed from '../../public/icons/completed.svg';
 
 import Add from '../../public/icons/addgrey.svg';
+import AddPurple from '../../public/icons/addpurple.svg';
 import Details from '../../public/icons/details.svg';
 
 import MoodboardBanner from '../../public/MoodboardBanner.svg';
@@ -82,22 +84,23 @@ export default function Kanban() {
 
   const [CompletedData, setCompletedData] = useState([
     {
-      topic: 'Mumbai sux',
-      title: 'Mumbai sux',
-      description: 'Mumbai sux',
-      category: 'Mumbai sux',
-      useravatars: [],
-      date: 'Mumbai sux',
-      comments: 2,
+      topic: 'FLYTE-5',
+      title: 'Presentation',
+      description:
+        'Help business to clearly define their anuual e-commerce digital strategy by creating a high-level plan.',
+      category: 'Planning',
+      useravatars: [Av6],
+      date: 'Done',
+      comments: 11,
     },
     {
-      topic: 'Pakistan sux',
-      title: 'Pakistan sux',
-      description: 'Pakistan sux',
-      category: 'Pakistan sux',
-      useravatars: [],
-      date: 'Pakistan sux',
-      comments: 2,
+      topic: 'FLYTE-6',
+      title: 'Brainstorming',
+      description: '',
+      category: 'Research',
+      useravatars: [Av5, Av7],
+      date: 'Done',
+      comments: 12,
     },
   ]);
 
@@ -123,6 +126,11 @@ export default function Kanban() {
           {ToDoData.map((data, index) => {
             return <KanbanCard data={data} key={index} />;
           })}
+
+          <AddCardButton>
+            <Image src={AddPurple} alt="Add" />
+            <span>Add a Card</span>
+          </AddCardButton>
         </ColumnBody>
       </Column>
 
@@ -146,6 +154,11 @@ export default function Kanban() {
           {ProgressData.map((data, index) => {
             return <KanbanCard data={data} key={index} />;
           })}
+
+          <AddCardButton>
+            <Image src={AddPurple} alt="Add" />
+            <span>Add a Card</span>
+          </AddCardButton>
         </ColumnBody>
       </Column>
 
@@ -169,6 +182,11 @@ export default function Kanban() {
           {CompletedData.map((data, index) => {
             return <KanbanCard data={data} key={index} />;
           })}
+
+          <AddCardButton>
+            <Image src={AddPurple} alt="Add" />
+            <span>Add a Card</span>
+          </AddCardButton>
         </ColumnBody>
       </Column>
     </Container>

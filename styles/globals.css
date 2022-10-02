@@ -8,6 +8,10 @@ body {
   scrollbar-width: '5px';
 }
 
+* {
+  letter-spacing: 0.26px;
+}
+
 @font-face {
   font-family: GTWalshiem;
   src: url('../public/fonts//GT-Walsheim-Regular-Trial.otf') format('opentype');

@@ -34,7 +34,7 @@ export const ContainerTopic = styled('div', {
 export const ContainerTitle = styled('div', {
   marginTop: '10px',
   color: '#111118',
-  fontSize: '24px',
+  fontSize: '22px',
   fontWeight: 'bold',
 });
 
